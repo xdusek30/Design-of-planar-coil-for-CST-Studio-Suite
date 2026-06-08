@@ -112,9 +112,9 @@ for i in range(total_segments):
     ndx, ndy = directions[next_dir]
     
     # Calculate the length of the current segment. The length increases with each turn of the spiral
-    if curr_dir in [0, 2]:  # Pohyb po ose X
+    if curr_dir in [0, 2]:  # X movement
         side_length = (i // 2 + 1) * (pitchDistance_between_Xpoints)
-    else:                   # Pohyb po ose Y
+    else:                   # Y movement
         side_length = (i // 2 + 1) * (pitchDistance_between_Ypoints)
     
     # Subtract the corner length from the straight segment. For the first segment, we only subtract one corner length, for subsequent segments we subtract two (the start and end of the segment)

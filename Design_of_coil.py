@@ -74,10 +74,10 @@ output_file = "coil_points.txt"
 # Writing points to the output file
 with open(output_file, "w", encoding="utf-8") as f:
     for point in points:
-        # Formátování na 4 desetinná místa (vhodné pro přesný import do CST)
+        # Formating to 4 decimal places (suitable for precise import into CST)
         f.write(f"{point[0]:.4f} {point[1]:.4f}\n")
 
-print(f"Body byly úspěšně exportovány do souboru: {output_file}")
+print(f"Points were successfully exported to file: {output_file}")
 
 
 
@@ -88,12 +88,12 @@ print(f"Body byly úspěšně exportovány do souboru: {output_file}")
 pitchDistance_between_Xpoints = RW / N
 pitchDistance_between_Ypoints = RH / N
 
-print("Vzdálenost mezi závity X: ", pitchDistance_between_Xpoints)
-print("Vzdálenost mezi závity Y: ", pitchDistance_between_Ypoints)
+print("Distance between turns X: ", pitchDistance_between_Xpoints)
+print("Distance between turns Y: ", pitchDistance_between_Ypoints)
 
 points = []
 
-# Spirála začíná ve středu
+# Spiral starts at the center
 x, y = X0, Y0
 points.append((x, y))
 
@@ -152,7 +152,7 @@ output_file = "coil_points_corner.txt"
 # Writing points to the output file
 with open(output_file, "w", encoding="utf-8") as f:
     for point in points:
-        # Formátování na 4 desetinná místa (vhodné pro přesný import do CST)
+        # Formating to 4 decimal places (suitable for precise import into CST)
         f.write(f"{point[0]:.4f} {point[1]:.4f}\n")
 
-print(f"Body byly úspěšně exportovány do souboru: {output_file}")
+print(f"Points were successfully exported to file: {output_file}")
